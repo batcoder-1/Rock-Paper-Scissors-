@@ -21,7 +21,7 @@ A fun, responsive Rock Paper Scissors web game built with **HTML**, **CSS**, and
 
 🚀 Live Demo
 Play the game online:
-🔗 https://batcoder-1.github.io/rock-paper-scissors
+🔗 https://batcoder-1.github.io/Rock-Paper-Scissors-/
 
 Made by Naman Dadhich
 Built as a frontend mini-project for fun and learning.
