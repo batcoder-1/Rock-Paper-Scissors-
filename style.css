@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFF1CA;
+  color: #2D4F2B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header */
+#header {
+  background-color: #2D4F2B;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Options Section */
+#options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.option {
+  height: 150px;
+  width: 150px;
+  padding:20px;
+  background-color: #FFB823;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.option:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+.option img {
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Message Box */
+.message, .win, .lose, .draw {
+  width: 320px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border-radius: 16px;
+  border: 2px solid #2D4F2B;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  animation: pop 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  background-color: #FFB823;
+  color: black;
+}
+
+.win {
+  background-color: #708A58;
+  color: white;
+}
+
+.lose {
+  background-color: red;
+  color: black;
+}
+
+.draw {
+  background-color: #FFF1CA;
+  color: black;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Score Display */
+#points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 30px;
+}
+
+.point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+
+.point .score {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Reset Button */
+#reset {
+  height: 50px;
+  width: 140px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #2D4F2B;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+#reset:hover {
+  background-color: #708A58;
+  transform: scale(1.05);
+  cursor: pointer;
+}
